@@ -1,0 +1,14 @@
+<mvc:View controllerName="createso.controller.Screen1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+     <ComboBox
+				items="{
+					path: '/CountriesCollection',
+					sorter: { path: 'text' }
+				}">
+				<core:Item key="{key}" text="{text}" />
+			</ComboBox>
+        <content />
+    </Page>
+</mvc:View>
